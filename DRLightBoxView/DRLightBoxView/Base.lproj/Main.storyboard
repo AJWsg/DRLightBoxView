@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rEs-Mk-ytO">
+                                <rect key="frame" x="0.0" y="225" width="600" height="150"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HRG-6U-bPf" customClass="DRLightBoxView">
+                                        <rect key="frame" x="308" y="0.0" width="277" height="150"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6LP-y1-uH1" customClass="DRLightBoxView">
+                                        <rect key="frame" x="15" y="0.0" width="278" height="150"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="HRG-6U-bPf" firstAttribute="width" secondItem="6LP-y1-uH1" secondAttribute="width" id="37p-8g-Yes"/>
+                                    <constraint firstItem="6LP-y1-uH1" firstAttribute="top" secondItem="rEs-Mk-ytO" secondAttribute="top" id="AHQ-xJ-Ct7"/>
+                                    <constraint firstItem="HRG-6U-bPf" firstAttribute="leading" secondItem="6LP-y1-uH1" secondAttribute="trailing" constant="15" id="OsB-hb-wFs"/>
+                                    <constraint firstAttribute="height" constant="150" id="Ppd-c4-qft"/>
+                                    <constraint firstAttribute="bottom" secondItem="HRG-6U-bPf" secondAttribute="bottom" id="ZeN-cQ-r3q"/>
+                                    <constraint firstAttribute="bottom" secondItem="6LP-y1-uH1" secondAttribute="bottom" id="cuf-5W-HZV"/>
+                                    <constraint firstAttribute="trailing" secondItem="HRG-6U-bPf" secondAttribute="trailing" constant="15" id="ikb-xO-LPk"/>
+                                    <constraint firstItem="HRG-6U-bPf" firstAttribute="top" secondItem="rEs-Mk-ytO" secondAttribute="top" id="mNB-Gv-b5Y"/>
+                                    <constraint firstItem="6LP-y1-uH1" firstAttribute="leading" secondItem="rEs-Mk-ytO" secondAttribute="leading" constant="15" id="w5X-U5-4HY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rEs-Mk-ytO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4jX-9N-u09"/>
+                            <constraint firstItem="rEs-Mk-ytO" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="VBk-t9-hWu"/>
+                            <constraint firstItem="rEs-Mk-ytO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hvN-i6-eHR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lightBox1" destination="6LP-y1-uH1" id="S96-2E-inp"/>
+                        <outlet property="lightBox2" destination="HRG-6U-bPf" id="VNL-Yc-h2Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="600" y="395"/>
+        </scene>
+    </scenes>
+</document>
